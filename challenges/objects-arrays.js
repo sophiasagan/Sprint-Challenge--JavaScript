@@ -18,12 +18,12 @@ const tyrannosaurus = ({
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
 
-const tyrannosaurus = ({
-  name: 'Tyrannosaurus',
-  diet: 'carnivorous',
-  weight: '7000kg',
-  length: '12m',
-  period: 'Late Cretaceous'
+const stegosaurus = ({
+  name: 'Stegosaurus',
+  diet: 'herbivorous',
+  weight: '2000kg',
+  length: '9m',
+  period: 'Late Jurassic'
 });
 
 // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
@@ -129,7 +129,7 @@ The zoos want to display both the scientific name and the animal name in front o
 */
 const animalNames = [];
 zooAnimals.forEach((name) => {
-  return displayNames.push(`Name: ${name.animal_name}, Scientific: ${name.scientific_name}.`);
+  return animalNames.push(`Name: ${name.animal_name}, Scientific: ${name.scientific_name}.`);
 });
 console.log(animalNames);
 
