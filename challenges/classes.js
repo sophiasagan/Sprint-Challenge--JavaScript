@@ -37,9 +37,22 @@ class CuboidMaker {
           super(cubes);
       }
 
+      volume(){
+          return this.length * this.width * this.height;
+      }
+
        surfaceArea(){
           return (Math.pow(this.length, 2) * 6);
       }
   }
+
+  const cube = new CubeMaker ({
+      length: 5,
+      width: 5,
+      height: 5
+   });
+
+   console.log(cube.surfaceArea());
+   console.log(cube.volume());
 
 
